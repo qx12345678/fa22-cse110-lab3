@@ -23,6 +23,14 @@
             <h3><i>Date: </i>2022/10/7</h3>
             <h3><i>Attendence List: </i>Estella, Lisa, Rose, Mike</h3>
         </main>
+        <form>
+            <fieldset>
+                <legend>Enter Name To CheckIn</legend>
+                Name:<input type="text">
+                id:<input tyoe="text">
+            </fieldset>
+
+        </form>
         <hr>
         <section>
             <div class = "Agenda" id="Agenda"><strong>Agenda:</strong> </div>
@@ -53,6 +61,13 @@
                         Project Topic: Animes watching app<br>
                         Example: <a href="https://www.crunchyroll.com/offer-premium?utm_source=paid_cr&utm_medium=google-search&utm_campaign=conversion&utm_term=crunchyroll&referrer=paid_cr_google-search_conversion&gclid=Cj0KCQjw4omaBhDqARIsADXULuU-Otd9TlXkZtvlOoH5_h2L7TBRWH9RnbwlBVJCwB8-D4buCgJdK_waAt8AEALw_wcB">
                             Crunchyroll</a>
+                            <p>anime is very popular right now.<br>
+                            <img src =
+                            "https://img1.ak.crunchyroll.com/i/spire4/6b4c9dcac0bcdf27fe1d21e75769f8861661079175_main.jpg"
+                            alt="Jujutsu Kaisen" 
+                            wideth="300"
+                            height="300" />
+                             </p>
                     </li>
                     <li>
                         Roles:
@@ -92,11 +107,64 @@
         <hr>
         <section>
             <div class = "Q" id="Q"><strong>Question: </strong></div>
+            <details> 
+                <summary>Estella</summary>
+                <p>what programming language we should use?</p>
+            </details>
+            <details> 
+                <summary>Lisa</summary>
+                <p>How to Implement?</p>
+            </details>
+            <details> 
+                <summary>Rose</summary>
+                <p>When is our next meeting?</p>
+            </details>
+            <details> 
+                <summary>Mike</summary>
+                <p>what is daily report?</p>
+            </details>
+            <p>Other you wanna share: 
+                <form>
+                    <textarea rows="5"
+                    cols="50" >
+                    </textarea><br>
+                    <input type="submit" value="submit">
+                </form>
+            </p>
         </section>
         <hr>
         <section>
             <div class = "Rec" id="Rec"><strong>Recording: </strong></div>
+            <p>Meetting Recording</p>
+            <video width="320" 
+            height="200"
+            controls>
+            <source src ="MeetingRec-1.mov">
+        </video>
+        <p> Meeting Audio</p>
+        <audio controls>
+            <source src="MeetingRec.m4a" type="audio/mpeg">
+        </audio>
         </section>
+        <hr>
+        <form>
+            <label>Next Schedule: </label>
+            <input list="time">
+            <datalist id="time"> 
+                <option value="Mon"/>
+                <option value="Wed"/>
+                <option value="Fri"/>
+            </datalist>
+            <button type="button">
+                Click Here
+            </button>
+        </form>
+        <hr>
+        <p>Do you finish the daily report?</p>
+        <select> 
+            <option value="YES">YES</option>
+            <option value="NO">NO</option>
+        </select>
         <hr>
         <footer>
             <a href="#">Contact Us</a> |
