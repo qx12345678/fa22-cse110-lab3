@@ -1,10 +1,10 @@
 ---
-name: Custom issue template
-about: Describe this issue template's purpose here.
+name: Task breakdown
+about: breakdown this week's task
 title: ''
-labels: ''
-assignees: ''
+labels: good first issue
+assignees: qx12345678
 
 ---
 
-
+# TASK
