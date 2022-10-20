@@ -1,3 +1,8 @@
+/*change the font*/
+body {
+    font-family: 'Fuzzy Bubbles', cursive;
+}
+/*element selector example*/
 h1 {
     /*change the color,font size of heading*/
     color:hsl(80, 61%, 26%);
@@ -8,6 +13,9 @@ h1 {
     padding-right:0.2in;
     background-color: rgb(223, 242, 223);
     margin:auto;
+    height:2cm;
+    width:100cm;
+    
 }
 h2 {
     color:darkgreen;
@@ -27,8 +35,113 @@ h3 {
     border-color:rgb(95, 159, 31);
     border-width: 0.1in;
     border-radius: 0cm;
+    display:inline-block;
 }
+/*change the paragraph's setting*/
 p {
     line-height:1cm;
     margin:1cm 1cm 1cm 1cm;
+    text-decoration:underline;
+    text-align: start;
+    display: inline;
+    max-height: 1cm;
+    max-width: 1000cm;
+    font:100;
+}
+section {
+    position:sticky;
+}
+select {
+    position:relative;
+}
+.Agenda:hover {
+    background-color:rgb(164, 236, 164);
+}
+.Last:hover {
+    background-color:rgb(164, 236, 164);
+}
+/*Pseudo-class selector*/
+.New:hover {
+    background-color:rgb(164, 236, 164);
+}
+.Q:active {
+    background-color:rgb(164, 236, 164);
+}
+/*display as flex*/
+/*class selector*/
+.New {
+    display: flex;
+    background-color: rgb(223, 242, 223);
+    font-size: medium;
+}
+/*ID selector*/
+#Last {
+    background-color: rgb(223, 242, 223);
+}
+/*Universal selector*/
+*.Agenda {
+    color: yellowgreen;
+}
+/*display as fird*/
+.grid-container {
+    display: grid;
+    column-gap: 50px;
+    row-gap: 50px;
+    background-color: rgb(223, 242, 223);
+    align-items: stretch;
+    place-items: center;
+}
+.grid-item1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.grid-item2 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.grid-item3 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.grid-item4 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+@media screen {
+    body {
+        background-color: rgb(241, 250, 245);
+    }
+}
+/*attribute selector*/
+input[type=text] {
+    width: 250px;
+    height: 30px;
+}
+
+/*selector list*/
+span, 
+div {
+    border: rgb(9, 105, 30) 2px solid;
+}
+
+/*Descendatnt Selector*/
+section p {
+    color: green;
+}
+
+/*Child Combinator*/
+ol > li {
+    color: yellowgreen;
+}
+/*General sibling combinator*/
+section ~ p {
+    background-color: coral;
+}
+/*Adjacent sibling combinator*/
+div + p {
+    color:rgb(203, 23, 104);
+}
+/*Combining Two Selectors*/
+div.Rec {
+    background-color: rgb(170, 218, 219);
 }
