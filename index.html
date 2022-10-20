@@ -7,6 +7,9 @@
         <link rel="stylesheet" href="index.css">
         <link rel="icon" type="image/x-icon" href="https://apache.org/favicons/favicon-32x32.png">
         <meta name = "author" content="Estella">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Roboto:ital,wght@1,300&display=swap');
+        </style>
     </head>
     <body>
         <header>
@@ -63,7 +66,7 @@
                             <p>anime is very popular right now.<br>
                             <img src =
                             "https://img1.ak.crunchyroll.com/i/spire4/6b4c9dcac0bcdf27fe1d21e75769f8861661079175_main.jpg"
-                            alt="Jujutsu Kaisen" width="300" height="300" />
+                            alt="Jujutsu Kaisen" width="300" height="400" />
                             </p>
                     </li>
                     <li>
@@ -71,7 +74,8 @@
                         <ol>
                             <li>UI Design of APP
                                 <form>
-                                Interested:<input type="text">
+                                    <label>Interested:</label>
+                                    <input type="text">
                                 </form>
                             </li>
                             <li>Implement API
@@ -127,15 +131,25 @@
                 </form>
         </section>
         <hr>
+
+        <div class="grid-container"><strong>ROLE</strong>
+            <div class="grid-item1">FrontEnd</div>
+            <div class="grid-item2">BackEnd</div>
+            <div class="grid-item3">UI</div>
+            <div class="grid-item4">Test</div>
+        </div>
+
+        <hr>
         <section>
             <div class = "Rec" id="Rec"><strong>Recording: </strong></div>
-            <p>Meetting Recording</p>
+            <p>Meetting Recording</p><br>
             <video width="320" 
             height="200"
             controls>
             <source src ="MeetingRec-1.mov">
         </video>
-        <p> Meeting Audio</p>
+        <br>
+        <p> Meeting Audio</p><br>
         <audio controls>
             <source src="MeetingRec.m4a" type="audio/mpeg">
         </audio>
